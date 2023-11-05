@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.nav-logo {
+    flex-shrink: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-tools {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-grow: 1;
+    max-inline-size: 100%;
+}
+
+.search-bar {
+    background-color: #E9ECEF;
+    border-radius: var(--border-radius-round);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-inline: 0.75rem;
+    inline-size: 100%;
+}
+
+
+.search-btn {
+    color: #6C757D;
+
+    &:where(:is(:hover, :focus-visible)) {
+        color: #212529;
+    }
+}
+

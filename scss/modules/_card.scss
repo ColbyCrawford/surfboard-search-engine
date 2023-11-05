@@ -1,0 +1,26 @@
+.card {
+    background-image: var(--p-card-bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.card-img {
+    --p-card-padding: 1rem;
+
+    position: relative;
+}
+
+.card-img > img {
+    inline-size: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+}
+
+.card-img > :not(img) {
+    position: absolute;
+    left: var(--p-card-padding);
+    bottom: var(--p-card-padding);
+}

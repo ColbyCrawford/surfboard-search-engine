@@ -1,0 +1,5 @@
+.container {
+    inline-size: var(--container-max-width);
+    padding-inline: calc(var(--grid-gutter) * 0.5);
+    margin-inline: auto;
+}

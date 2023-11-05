@@ -1,0 +1,31 @@
+{
+    "01": {
+        "surfboard": "Shortboard",
+        "skillLevel": "Advanced",
+        "waveHeight": "6-8 feet"
+    },
+    "02": {
+        "surfboard": "Longboard",
+        "skillLevel": "Intermediate",
+        "waveHeight": "2-4 feet"
+    },
+    "03": {
+        "surfboard": "Fish",
+        "skillLevel": "Beginner",
+        "waveHeight": "1-3 feet"
+    },  
+    "04": {
+        "surfboard": "Funboard",
+        "skillLevel": "Intermediate",
+        "waveHeight": "3-5 feet"
+    },
+    "05": {
+        "surfboard": "Big Wave Gun",
+        "skillLevel": "Expert",
+        "waveHeight": "10+ feet"
+      }  
+} 
+
+
+
+  
