@@ -14,8 +14,13 @@ a:focus-visible .gallery-item-thumbnail {
     display: grid;
     place-content: center;
     padding: 2rem;
-    max-height: 355px;
-    height: 100%;
+    max-height: 355px; // is setting fixed height 
+    height: 100%;      // like this bad practice?
+}
+
+.gallery-item-img {
+    block-size: 300px; // is setting fixed height 
+    object-fit: cover; // like this bad practice?
 }
 
 .gallery-item-text {

@@ -1,82 +1,104 @@
-{
-    "01": {
+[
+    {
+        "id": "01",
         "surfboard": "Happy Everyday",
         "brand": "Channel Islands",
         "skillLevel": "Intermediate - Advanced",
         "waveHeight": "3-8 feet",
-        "img-path": "/assets/images/surfboards/happy-everyday.png"
+        "imgPath": "/assets/images/surfboards-updated/happy-everyday.png",
+        "rating": "5.0"
     },
-    "02": {
+    {
+        "id": "02",
         "surfboard": "Sub Driver",
         "brand": "Lost Surfboards",
         "skillLevel": "Intermediate - Advanced",
         "waveHeight": "3-8 feet",
-        "img-path": "/assets/images/surfboards/sub-driver.png"
+        "imgPath": "/assets/images/surfboards-updated/sub-driver.png",
+        "rating": "5.0"
     },
-    "03": {
+    {
+        "id": "03",
         "surfboard": "Fishbeard",
         "brand": "Channel Islands",
         "skillLevel": "Intermediate",
         "waveHeight": "2-6",
-        "img-path": "/assets/images/surfboards/fishbeard.png"
+        "imgPath": "/assets/images/surfboards-updated/fishbeard.png",
+        "rating": "5.0"
     },  
-    "04": {
+    {
+        "id": "04",
         "surfboard": "Twin Fin",
         "brand": "Channel Islands",
         "skillLevel": "Intermediate",
         "waveHeight": "2-5 feet",
-        "img-path": "/assets/images/surfboards/twin-fin.png"
+        "imgPath": "/assets/images/surfboards-updated/twin-fin.png",
+        "rating": "5.0"
     },
-    "05": {
+    {
+        "id": "05",
         "surfboard": "Black Baron",
         "brand": "JS Industries",
         "skillLevel": "Intermediate",
         "waveHeight": "1-3 feet",
-        "img-path": "/assets/images/surfboards/black-baron.png"
-      },  
-    "06": {
+        "imgPath": "/assets/images/surfboards-updated/black-baron.png",
+        "rating": "5.0"
+    },  
+    {
+        "id": "06",
         "surfboard": "Dozer",
         "brand": "Rusty",
         "skillLevel": "Intermediate",
         "waveHeight": "3-6 feet",
-        "img-path": "/assets/images/surfboards/dozer.webp"
+        "imgPath": "/assets/images/surfboards-updated/dozer.png",
+        "rating": "5.0"
     },
-    "07": {
+    {
+        "id": "07",
         "surfboard": "Blackbird",
         "brand": "Rusty",
         "skillLevel": "Advanced",
         "waveHeight": "10+ feet",
-        "img-path": "/assets/images/surfboards/blackbird.webp"
+        "imgPath": "/assets/images/surfboards-updated/blackbird.webp",
+        "rating": "5.0"
     },
-    "08": {
+    {
+        "id": "08",
         "surfboard": "OG Flyer",
         "brand": "Channel Islands",
         "skillLevel": "Intermediate - Advanced",
         "waveHeight": "3-8",
-        "img-path": "/assets/images/surfboards/og-flyer.webp"
+        "imgPath": "/assets/images/surfboards-updated/og-flyer.webp",
+        "rating": "5.0"
     },  
-    "09": {
+    {
+        "id": "09",
         "surfboard": "Toy X",
         "brand": "Superbrand",
         "skillLevel": "Intermediate",
         "waveHeight": "2-5 feet",
-        "img-path": "/assets/images/surfboards/toy-x.webp"
+        "imgPath": "/assets/images/surfboards-updated/toy-x.png",
+        "rating": "5.0"
     },
-    "10": {
+    {
+        "id": "10",
         "surfboard": "Stub Driver",
         "brand": "Lost Surfboards",
         "skillLevel": "Intermediate",
         "waveHeight": "2-6 feet",
-        "img-path": "/assets/images/surfboards/stub-driver.png"
-      },  
-    "11": {
+        "imgPath": "/assets/images/surfboards-updated/stub-driver.png",
+        "rating": "5.0"
+    },  
+    {
+        "id": "11",
         "surfboard": "Evil Twin",
         "brand": "Lost Surfboards",
         "skillLevel": "Intermediate",
         "waveHeight": "3-6 feet",
-        "img-path": "/assets/images/surfboards/evin-twin.jpg"
-      }  
-} 
+        "imgPath": "/assets/images/surfboards-updated/evin-twin.png",
+        "rating": "5.0"
+    }  
+]
 
 
 

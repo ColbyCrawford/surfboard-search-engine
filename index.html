@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="nav">
+    <header id="main-header" data-scroll>
+        <nav class="nav">
                 <a class="nav-logo" href="/index.html">
                     <img class="logo" src="/assets/images/logo.svg" alt="Surfboards home">
                 </a>
@@ -26,13 +25,11 @@
                         <span class="icon-light-mode icon-md"></span>
                     </button>
                 </div>
-            </nav>
-        </div>
+        </nav>
     </header>
     <main>
-        <section id="categories">
-            <div class="container">
-                <ul class="category-list">
+        <section id="categories" class="u-pi-15">
+            <ul class="category-list">
                     <li>
                         <a class="category-ref" href="#">
                             <div class="category">
@@ -83,8 +80,7 @@
                             </div>
                         </a>
                     </li>
-                </ul>
-            </div>
+            </ul>
         </section>
         
         <section class="u-pb-64">
@@ -108,79 +104,36 @@
         </section>
 
         <section id="gallery">
-        <div class="container">
-            <ul id="gallery-items" class="grid-4-col">
-                <li>
-                    <a href="#">
-                        <article class="gallery-item">
-                            <div class="gallery-item-thumbnail">
-                                <img src="/assets/images/happy-everday.png"
-                                     alt="Happy Everyday">
-                            </div>
-                            <div class="gallery-item-text">
-                                <div>
-                                    <h3 class="gallery-item-title">Happy Everyday</h3>
-                                    <span class="gallery-item-meta">Channel Islands</span>
+            <div class="container">
+                <ul id="gallery-items" class="grid-4-col" data-gallery-items>
+                
+                    
+                </ul>
+                <template data-gallery-item-template>
+                    <li>
+                        <a href="#">
+                            <article class="gallery-item">
+                                <div class="gallery-item-thumbnail">
+                                    <img class="gallery-item-img"
+                                         src="" 
+                                         alt=""
+                                         data-gallery-item-img>
                                 </div>
-                                <span class="reviews">4.0</span>
-                            </div>
-                        </article>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <article class="gallery-item">
-                            <div class="gallery-item-thumbnail">
-                                <img src="/assets/images/sub-driver.png"
-                                     alt="Sub Driver">
-                            </div>
-                            <div class="gallery-item-text">
-                                <div>
-                                    <h3 class="gallery-item-title">Sub Driver Surfboard 5'7" Brand New</h3>
-                                    <span class="gallery-item-meta">Lost Surfboards</span>
+                                <div class="gallery-item-text">
+                                    <div>
+                                        <h3 class="gallery-item-title" data-gallery-item-title></h3>
+                                        <span class="gallery-item-meta" data-gallery-item-meta></span>
+                                    </div>
+                                    <span class="reviews" data-reviews></span>
                                 </div>
-                                <span class="reviews">4.3</span>
-                            </div>
-                        </article>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <article class="gallery-item">
-                            <div class="gallery-item-thumbnail">
-                                <img src="/assets/images/fishbeard.png"
-                                     alt="Fishbeard">
-                            </div>
-                            <div class="gallery-item-text">
-                                <div>
-                                    <h3 class="gallery-item-title">Fishbeard</h3>
-                                    <span class="gallery-item-meta">Channel Islands</span>
-                                </div>
-                                <span class="reviews">4.7</span>
-                            </div>
-                        </article>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <article class="gallery-item">
-                            <div class="gallery-item-thumbnail">
-                                <img src="/assets/images/twin-fin.png"
-                                     alt="Twin Fin">
-                            </div>
-                            <div class="gallery-item-text">
-                                <div>
-                                    <h3 class="gallery-item-title">Twin Fin</h3>
-                                    <span class="gallery-item-meta">Channel Islands</span>
-                                </div>
-                                <span class="reviews">5.0</span>
-                            </div>
-                        </article>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                            </article>
+                        </a>
+                    </li>
+                </template>
+            </div>
         </section>
+
+        <script src="js/index.js"></script>
     </main>
     
 </body>

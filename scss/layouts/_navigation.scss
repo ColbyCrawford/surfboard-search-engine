@@ -1,5 +1,20 @@
 @use '../abstracts' as *;
 
+#main-header {
+    background-color: #F8F9FA;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#main-header[data-scroll="true"] {
+    --p-header-box-shadow: hsla(210, 11%, 15%, 0.1);
+
+    box-shadow: 1px 2px 4px 0px var(--p-header-box-shadow);
+    -webkit-box-shadow: 1px 2px 4px 0px var(--p-header-box-shadow);
+    -moz-box-shadow: 1px 2px 4px 0px var(--p-header-box-shadow);
+}
+
 .nav-logo {
     flex-shrink: 0;
 }
@@ -7,7 +22,9 @@
 .nav {
     display: flex;
     gap: 1.5rem;
+    padding: 0.9375rem 1rem;
 }
+
 
 .nav-tools {
     display: flex;
