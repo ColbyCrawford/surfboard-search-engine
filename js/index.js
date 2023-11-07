@@ -42,3 +42,15 @@ window.addEventListener('scroll', () => {
         mainHeader.setAttribute("data-scroll", false)
     }
 })
+
+// PROBLEM
+// The current app doesn't direct us to a new page.
+// Instead it manipulates the data on the page.
+//
+// PLAN
+// Steps:
+// [1] For each surfboard object see if the search input "includes" 
+//     it's values
+// [2] if true, add class "u-hidden" to the surfboard element and
+//     push the surfboard object into an a "results" array
+// [3] redirect to a results page containing the results array data

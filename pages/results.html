@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfboards | Results</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header" data-scroll>
+        <nav class="nav">
+                <a class="nav-logo" href="/index.html">
+                    <img class="logo" src="/assets/images/logo.svg" alt="Surfboards home">
+                </a>
+                <div class="nav-tools">
+                    <form class="search-bar" action="#" role="search">
+                        <button class="search-btn">
+                            <span class="icon-search icon-md"></span>
+                        </button>
+                        <label for="search-input" hidden>Search</label>
+                        <input id="search-input" type="text" autocomplete="off" placeholder="Search">
+                    </form>
+                    <button class="btn-icon">
+                        <span class="icon-light-mode icon-md"></span>
+                    </button>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <div class="container">
+                <ul id="gallery-items" class="grid-4-col" data-gallery-items>
+                
+                    
+                </ul>
+                <template data-gallery-item-template>
+                    <li>
+                        <a href="#">
+                            <article class="gallery-item">
+                                <div class="gallery-item-thumbnail">
+                                    <img class="gallery-item-img"
+                                         src="" 
+                                         alt=""
+                                         data-gallery-item-img>
+                                </div>
+                                <div class="gallery-item-text">
+                                    <div>
+                                        <h3 class="gallery-item-title" data-gallery-item-title></h3>
+                                        <span class="gallery-item-meta" data-gallery-item-meta></span>
+                                    </div>
+                                    <span class="reviews" data-reviews></span>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                </template>
+            </div>
+        </section>
+
+        <script src="js/index.js"></script>
+    </main>
+    
+</body>
+</html>
