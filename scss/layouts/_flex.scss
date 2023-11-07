@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    flex-shrink: 0;
+    inline-size: 100%;
+    max-inline-size: 100%;
+}
+
+
+@media #{$break3open} {
+    .col-4-md {
+        inline-size: calc((100% / 12)  * 4);
+    }
+    
+    .col-7-md {
+        inline-size: calc((100% / 12) * 7);
+    }
+}

@@ -15,16 +15,20 @@
     -moz-box-shadow: 1px 2px 4px 0px var(--p-header-box-shadow);
 }
 
-.nav-logo {
-    flex-shrink: 0;
-}
-
 .nav {
     display: flex;
     gap: 1.5rem;
-    padding: 0.9375rem 1rem;
-}
+    padding-block: 0.9375rem;
 
+    @media #{$break1} { 
+        padding-inline: .9375rem;
+        gap: 0.75rem;
+    }
+    @media #{$break2open} {
+        padding-inline: 2rem;
+        gap: 0.5rem;
+    }
+}
 
 .nav-tools {
     display: flex;
@@ -32,6 +36,9 @@
     align-items: center;
     flex-grow: 1;
     max-inline-size: 100%;
+
+    @media #{$break1} { gap: 0.5rem; }
+    @media #{$break2open} { gap: 3rem; }
 }
 
 .search-bar {

@@ -1,5 +1,9 @@
+@use '../abstracts' as *;
+
 .container {
-    inline-size: var(--container-max-width);
-    padding-inline: calc(var(--grid-gutter) * 0.5);
+    max-inline-size: var(--container-max-width);
     margin-inline: auto;
+
+    @media #{$break1} { padding-inline: .9375rem }
+    @media #{$break2open} { padding-inline: 2rem }
 }

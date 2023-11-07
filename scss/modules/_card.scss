@@ -17,6 +17,7 @@
     inline-size: 100%;
     object-fit: cover;
     border-radius: var(--border-radius-md);
+    min-block-size: 180px;
 }
 
 .card-img > :not(img) {
