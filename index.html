@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboards | Search</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header id="main-header" data-scroll>
         <nav class="nav">
+            <div class="nav-top">
                 <a class="nav-logo" href="/index.html">
                     <img class="logo" src="/assets/images/logo.svg" alt="Surfboards home">
                 </a>
                 <div class="nav-tools">
-                    <form class="search-bar" action="#" role="search">
-                        <button class="search-btn">
+                    <form class="search-bar" role="search">
+                        <button class="search-btn" type="submit">
                             <span class="icon-search icon-md"></span>
                         </button>
-                        <label for="search-input" hidden>Search</label>
-                        <input id="search-input" type="text" autocomplete="off" placeholder="Search">
+                        <input id="search-input"
+                               name="searchInput" 
+                               type="text"         
+                               autocomplete="off" 
+                               aria-label="search"
+                               placeholder="Search">
                     </form>
                     <button class="btn-icon">
                         <span class="icon-light-mode icon-md"></span>
                     </button>
                 </div>
+            </div>
         </nav>
     </header>
     <main>
         <section id="categories">
             <ul class="category-list">
-                    <li>
-                        <a class="category-ref" href="#">
-                            <div class="category">
-                                <div class="category-icon-wrapper">
-                                    <img src="/assets/images/shortboard.png" alt="" aria-hidden="true">
-                                </div>
-                                <span class="category-label">Shortboard</span>
+                <li>
+                    <a class="category-ref" href="#">
+                        <div class="category">
+                            <div class="category-icon-wrapper">
+                                <img src="/assets/images/shortboard.png" alt="" aria-hidden="true">
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="category-ref" href="#">
-                            <div class="category">
-                                <div class="category-icon-wrapper">
-                                    <img src="/assets/images/longboard.png" alt="" aria-hidden="true">
-                                </div>
-                                <span class="category-label">Longboard</span>
+                            <span class="category-label">Shortboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="category-ref" href="#">
+                        <div class="category">
+                            <div class="category-icon-wrapper">
+                                <img src="/assets/images/longboard.png" alt="" aria-hidden="true">
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="category-ref" href="#">
-                            <div class="category">
-                                <div class="category-icon-wrapper">
-                                    <img src="/assets/images/fish.png" alt="" aria-hidden="true">
-                                </div>
-                                <span class="category-label">Fish</span>
+                            <span class="category-label">Longboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="category-ref" href="#">
+                        <div class="category">
+                            <div class="category-icon-wrapper">
+                                <img src="/assets/images/fish.png" alt="" aria-hidden="true">
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="category-ref" href="#">
-                            <div class="category">
-                                <div class="category-icon-wrapper">
-                                    <img src="/assets/images/funboard.png" alt="" aria-hidden="true">
-                                </div>
-                                <span class="category-label">Funboard</span>
+                            <span class="category-label">Fish</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="category-ref" href="#">
+                        <div class="category">
+                            <div class="category-icon-wrapper">
+                                <img src="/assets/images/funboard.png" alt="" aria-hidden="true">
                             </div>
-                        </a>
-                    </li>
-                    <li class="category">
-                        <a class="category-ref" href="#">
-                            <div class="category">
-                                <div class="category-icon-wrapper">
-                                    <img src="/assets/images/gun.png" alt="" aria-hidden="true">
-                                </div>
-                                <span class="category-label">Gun</span>
+                            <span class="category-label">Funboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="category">
+                    <a class="category-ref" href="#">
+                        <div class="category">
+                            <div class="category-icon-wrapper">
+                                <img src="/assets/images/gun.png" alt="" aria-hidden="true">
                             </div>
-                        </a>
-                    </li>
+                            <span class="category-label">Gun</span>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </section>
-        
+
         <section class="u-pb-64">
             <div class="container">
                 <div class="row u-space-btwn u-align-center">
@@ -106,18 +114,15 @@
         <section id="gallery">
             <div class="container">
                 <ul id="gallery-items" class="grid-4-col" data-gallery-items>
-                
-                    
+
+
                 </ul>
                 <template data-gallery-item-template>
                     <li>
                         <a href="#">
                             <article class="gallery-item">
                                 <div class="gallery-item-thumbnail">
-                                    <img class="gallery-item-img"
-                                         src="" 
-                                         alt=""
-                                         data-gallery-item-img>
+                                    <img class="gallery-item-img" src="" alt="" data-gallery-item-img>
                                 </div>
                                 <div class="gallery-item-text">
                                     <div>
@@ -133,8 +138,9 @@
             </div>
         </section>
 
-        <script src="js/index.js"></script>
+        <script src="/js/index.js"></script>
     </main>
-    
+
 </body>
+
 </html>

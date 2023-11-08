@@ -3,6 +3,7 @@ document.querySelector("[data-gallery-item-template]")
 const galleryItems = document.querySelector("[data-gallery-items]")
 const searchInput = document.getElementById("search-input")
 const mainHeader = document.getElementById("main-header")
+const searchForm = document.querySelector("form[role='search']")
 
 let surfboards = []
 
@@ -54,3 +55,23 @@ window.addEventListener('scroll', () => {
 // [2] if true, add class "u-hidden" to the surfboard element and
 //     push the surfboard object into an a "results" array
 // [3] redirect to a results page containing the results array data
+
+
+
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    let searchFormData = new FormData(searchForm)
+    let searchInputValue = searchFormData.get("searchInput")
+
+    window.localStorage.setItem("searchInput", searchInputValue)
+    window.location.href = "/pages/results.html"
+
+    console.log(window.localStorage.getItem("searchInput"))
+})
+searchInput.value = window.localStorage.getItem("searchInput")
+
+
+
+
+

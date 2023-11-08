@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfboards | Results</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header id="main-header" data-scroll>
-        <nav class="nav">
-                <a class="nav-logo" href="/index.html">
-                    <img class="logo" src="/assets/images/logo.svg" alt="Surfboards home">
-                </a>
-                <div class="nav-tools">
-                    <form class="search-bar" action="#" role="search">
-                        <button class="search-btn">
-                            <span class="icon-search icon-md"></span>
+    <div class="main-results-grid">
+        <header id="main-header" data-scroll>
+            <nav class="nav">
+                <div class="nav-top">
+                    <a class="nav-logo" href="/index.html">
+                        <img class="logo" src="/assets/images/logo.svg" alt="Surfboards home">
+                    </a>
+                    <div class="nav-tools">
+                        <form class="search-bar" role="search">
+                            <button class="search-btn">
+                                <span class="icon-search icon-md"></span>
+                            </button>
+                            <label for="search-input" hidden>Search</label>
+                            <input id="search-input" name="searchInput" type="text" autocomplete="off" placeholder="Search">
+                        </form>
+                        <button class="btn-icon">
+                            <span class="icon-light-mode icon-md"></span>
                         </button>
-                        <label for="search-input" hidden>Search</label>
-                        <input id="search-input" type="text" autocomplete="off" placeholder="Search">
-                    </form>
-                    <button class="btn-icon">
-                        <span class="icon-light-mode icon-md"></span>
-                    </button>
+                    </div>
                 </div>
-        </nav>
-    </header>
-    <main>
-        <section id="gallery">
-            <div class="container">
+                <div class="nav-bottom">
+                    <ul class="nav-categories">
+                        <li class="nav-category">
+                            <a href="#" class="is-selected">
+                                <span>All</span>
+                            </a>
+                        </li>
+                        <li class="nav-category">
+                            <a href="#">
+                                <span>Brand</span>
+                            </a>
+                        </li>
+                        <li class="nav-category">
+                            <a href="#">
+                                <span>Accessories</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <aside id="main-aside">
+            <h2 id="results-page-title" class="h2">"Happy Everyday"</h2>
+            <span id="results-page-results" class="h2">3 results</span>
+
+            <section class="drop-section">
+                <ul class="drop-list">
+                    <li class="drop-item">
+                        <details>
+                            <summary class="drop-item-btn">
+                                <span class="h3">Sort</span>
+                                <span class="icon-chevron-down icon-md"></span>
+                            </summary>
+                            <div class="drop-item-collapsible"></div>
+                        </details>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <main id="main-content">
+            <section id="gallery">
                 <ul id="gallery-items" class="grid-4-col" data-gallery-items>
-                
-                    
                 </ul>
                 <template data-gallery-item-template>
                     <li>
                         <a href="#">
                             <article class="gallery-item">
                                 <div class="gallery-item-thumbnail">
-                                    <img class="gallery-item-img"
-                                         src="" 
-                                         alt=""
-                                         data-gallery-item-img>
+                                    <img class="gallery-item-img" src="" alt="" data-gallery-item-img>
                                 </div>
                                 <div class="gallery-item-text">
                                     <div>
@@ -55,11 +93,11 @@
                         </a>
                     </li>
                 </template>
-            </div>
-        </section>
+            </section>
+        </main>
+    </div>
 
-        <script src="js/index.js"></script>
-    </main>
-    
+    <script src="/js/index.js"></script>
 </body>
+
 </html>

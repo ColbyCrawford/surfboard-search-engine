@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+#results-page-title {
+    margin-block-end: 1rem;
+}
+
+#results-page-results {
+    display: inline-block;
+    margin-block-end: 2.5rem;
+}
