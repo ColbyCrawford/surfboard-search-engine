@@ -17,6 +17,16 @@ searchInput.addEventListener("input", e => {
     })
 })
 
+function resultsArray(input) {
+    const value = input.toLowerCase()
+    surfboards.forEach(surfboard => {
+        const isVisible = 
+        surfboard.surfboard.toLowerCase().includes(value) || 
+        surfboard.brand.toLowerCase().includes(value)
+        surfboard.element.classList.toggle("u-hidden", !isVisible)
+    })
+}
+
 fetch("/data/surfboards.json")
 .then(response => response.json())
 .then(data => {
@@ -63,13 +73,25 @@ searchForm.addEventListener("submit", (e) => {
 
     let searchFormData = new FormData(searchForm)
     let searchInputValue = searchFormData.get("searchInput")
-
     window.localStorage.setItem("searchInput", searchInputValue)
     window.location.href = "/pages/results.html"
-
-    console.log(window.localStorage.getItem("searchInput"))
 })
-searchInput.value = window.localStorage.getItem("searchInput")
+
+window.addEventListener("load", function() {
+    if (window.location.href.includes('/index.html')) {
+        window.localStorage.setItem("searchInput", '')
+    }
+    searchInput.value = window.localStorage.getItem("searchInput")
+    
+    this.setTimeout(function(){
+        resultsArray(searchInput.value)
+    }, 100)
+})
+
+
+
+
+
 
 
 
