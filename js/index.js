@@ -92,8 +92,23 @@ window.addEventListener("load", function() {
 
 
 
+let x = 2
+
+let myPromise = new Promise( function (resolve, reject) {
+    if (x == 2) {
+        resolve('Fulfilled') 
+    } else {
+        reject('Reject')
+    }
+})
+
+myPromise.
+then((fullfilled) => console.log(fullfilled), 
+    (reject) => console.log(reject))
 
 
+console.log(fetch('/data/surfboards.json'))
+    
 
 
 
